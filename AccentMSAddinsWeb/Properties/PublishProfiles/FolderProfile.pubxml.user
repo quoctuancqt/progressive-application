@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddinsWeb\bin\Release\PublishOutput</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AccentMSAddinsWeb.csproj">
+      <publishTime>01/04/2018 15:50:19</publishTime>
+    </File>
+    <File Include="AccentMSAddinsWeb.csproj.user">
+      <publishTime>01/04/2018 15:08:42</publishTime>
+    </File>
+    <File Include="App_Start/WebApiConfig.cs">
+      <publishTime>12/28/2017 14:19:08</publishTime>
+    </File>
+    <File Include="bin/AccentMSAddinsWeb.dll">
+      <publishTime>01/29/2018 10:59:03</publishTime>
+    </File>
+    <File Include="bin/AccentMSAddinsWeb.dll.config">
+      <publishTime>01/04/2018 15:50:19</publishTime>
+    </File>
+    <File Include="bin/AccentMSAddinsWeb.pdb">
+      <publishTime>01/29/2018 10:59:03</publishTime>
+    </File>
+    <File Include="bin/Content/xml/search.xml">
+      <publishTime>12/26/2017 09:41:26</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>06/06/2017 22:59:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>08/15/2017 13:12:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <publishTime>08/10/2017 13:57:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 04:55:32</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.xml">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Release/PublishOutput/app_offline.htm">
+      <publishTime>01/03/2018 14:48:03</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>04/13/2017 15:47:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.Process.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.DriveInfo.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Thread.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/13/2017 15:47:48</publishTime>
+    </File>
+    <File Include="bin/System.AppContext.dll">
+      <publishTime>11/05/2016 04:55:34</publishTime>
+    </File>
+    <File Include="bin/System.Console.dll">
+      <publishTime>11/05/2016 04:55:48</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 04:55:52</publishTime>
+    </File>
+    <File Include="bin/System.Diagnostics.Tracing.dll">
+      <publishTime>11/05/2016 04:56:00</publishTime>
+    </File>
+    <File Include="bin/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 04:56:02</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 04:56:04</publishTime>
+    </File>
+    <File Include="bin/System.IO.dll">
+      <publishTime>11/05/2016 04:56:18</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 04:56:08</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/11/2016 23:13:46</publishTime>
+    </File>
+    <File Include="bin/System.IO.Packaging.dll">
+      <publishTime>06/11/2016 23:13:48</publishTime>
+    </File>
+    <File Include="bin/System.Linq.dll">
+      <publishTime>11/05/2016 04:56:20</publishTime>
+    </File>
+    <File Include="bin/System.Linq.Expressions.dll">
+      <publishTime>11/05/2016 04:56:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>11/05/2016 04:56:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.xml">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 04:56:34</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.dll">
+      <publishTime>11/05/2016 04:56:48</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.dll">
+      <publishTime>11/05/2016 04:57:10</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Extensions.dll">
+      <publishTime>11/05/2016 04:56:50</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.dll">
+      <publishTime>11/05/2016 04:56:54</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 04:57:00</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 04:57:14</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 04:57:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 04:57:18</publishTime>
+    </File>
+    <File Include="bin/System.Text.RegularExpressions.dll">
+      <publishTime>11/05/2016 04:57:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>01/28/2015 04:01:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>01/28/2015 04:03:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.xml">
+      <publishTime>01/28/2015 04:03:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.xml">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.xml">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 04:57:36</publishTime>
+    </File>
+    <File Include="BrowseLibrary/Home.css">
+      <publishTime>01/25/2018 15:05:58</publishTime>
+    </File>
+    <File Include="BrowseLibrary/Home.html">
+      <publishTime>01/25/2018 13:58:21</publishTime>
+    </File>
+    <File Include="BrowseLibrary/Home.js">
+      <publishTime>01/30/2018 12:09:27</publishTime>
+    </File>
+    <File Include="CheckUpdate/Home.css">
+      <publishTime>01/22/2018 14:10:08</publishTime>
+    </File>
+    <File Include="CheckUpdate/Home.html">
+      <publishTime>01/26/2018 00:28:00</publishTime>
+    </File>
+    <File Include="CheckUpdate/Home.js">
+      <publishTime>01/30/2018 11:08:05</publishTime>
+    </File>
+    <File Include="Components/Authorization/Login.html">
+      <publishTime>01/18/2018 15:25:38</publishTime>
+    </File>
+    <File Include="Content/custom.css">
+      <publishTime>01/22/2018 14:29:45</publishTime>
+    </File>
+    <File Include="Content/fabric.components.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/fabric.components.min.css">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Content/fabric.components.rtl.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/fabric.components.rtl.min.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/fabric.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/fabric.min.css">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Content/fabric.rtl.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/fabric.rtl.min.css">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/css/font-awesome.css">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/css/font-awesome.min.css">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.eot">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.woff">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/fonts/FontAwesome.otf">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/HELP-US-OUT.txt">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/animated.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/bordered-pulled.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/core.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/fixed-width.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/font-awesome.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/icons.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/larger.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/list.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/mixins.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/path.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/rotated-flipped.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/screen-reader.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/stacked.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/less/variables.less">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/font-awesome.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_animated.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_bordered-pulled.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_core.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_fixed-width.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_icons.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_larger.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_list.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_mixins.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_path.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_rotated-flipped.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_screen-reader.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_stacked.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.7.0/scss/_variables.scss">
+      <publishTime>12/07/2017 11:44:39</publishTime>
+    </File>
+    <File Include="Content/grid-help.css">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Content/grid-help.min.css">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Content/grid-help/grid-help.css">
+      <publishTime>12/21/2017 17:35:39</publishTime>
+    </File>
+    <File Include="Content/grid-help/grid-help.js">
+      <publishTime>12/21/2017 17:35:39</publishTime>
+    </File>
+    <File Include="Content/grid-help/grid-help.min.css">
+      <publishTime>12/21/2017 17:35:39</publishTime>
+    </File>
+    <File Include="Content/grid-help/grid-help.min.js">
+      <publishTime>12/21/2017 17:35:39</publishTime>
+    </File>
+    <File Include="Content/notification-style.css">
+      <publishTime>01/22/2018 14:42:36</publishTime>
+    </File>
+    <File Include="Content/OfficeThemes.css">
+      <publishTime>12/19/2017 14:49:29</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Animations.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Animations.RTL.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Color.Mixins.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Components.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Grid.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Icons.Font.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Icons.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Icons.RTL.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Responsive.Utilities.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.RTL.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Typography.Fonts.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Typography.Language.Overrides.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Typography.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/Fabric.Utilities.Output.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Animations.RTL.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Animations.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Color.Mixins.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Color.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Common.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Grid.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Icons.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Mixins.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Responsive.Utilities.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Responsive.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Typography.Fonts.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Typography.Language.Overrides.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Typography.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Typography.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.Utilities.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Fabric.ZIndex.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/sass/_Office.Color.Variables.scss">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Content/style.min.css">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Content/xml/search.xml">
+      <publishTime>12/26/2017 09:41:26</publishTime>
+    </File>
+    <File Include="Controllers/FilesController.cs">
+      <publishTime>01/04/2018 17:19:47</publishTime>
+    </File>
+    <File Include="Controllers/TestController.cs">
+      <publishTime>01/04/2018 15:09:04</publishTime>
+    </File>
+    <File Include="Functions/FunctionFile.html">
+      <publishTime>01/29/2018 10:48:01</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/22/2017 08:40:23</publishTime>
+    </File>
+    <File Include="Global.asax.cs">
+      <publishTime>12/22/2017 08:40:23</publishTime>
+    </File>
+    <File Include="Images/BrowseLibrary16x16.png">
+      <publishTime>12/11/2017 15:03:38</publishTime>
+    </File>
+    <File Include="Images/BrowseLibrary32x32.png">
+      <publishTime>12/11/2017 15:04:56</publishTime>
+    </File>
+    <File Include="Images/BrowseLibrary80x80.png">
+      <publishTime>12/11/2017 15:06:24</publishTime>
+    </File>
+    <File Include="Images/CheckUpdate16x16.png">
+      <publishTime>12/11/2017 15:03:22</publishTime>
+    </File>
+    <File Include="Images/CheckUpdate32x32.png">
+      <publishTime>12/11/2017 15:04:40</publishTime>
+    </File>
+    <File Include="Images/CheckUpdate80x80.png">
+      <publishTime>12/11/2017 15:06:12</publishTime>
+    </File>
+    <File Include="Images/folder-icon.png">
+      <publishTime>12/12/2017 16:47:33</publishTime>
+    </File>
+    <File Include="Index.html">
+      <publishTime>12/09/2017 22:28:17</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/04/2018 15:50:19</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml">
+      <publishTime>01/04/2018 17:25:23</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/FolderProfile.pubxml.user">
+      <publishTime>01/04/2018 17:36:28</publishTime>
+    </File>
+    <File Include="Scripts/base64-arraybuffer.js">
+      <publishTime>12/28/2017 11:54:16</publishTime>
+    </File>
+    <File Include="Scripts/blob-util.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Blob.js">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/authorize.helper.js">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/common.helper.js">
+      <publishTime>01/24/2018 19:15:17</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/dialog.helper.js">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/notification-helper.js">
+      <publishTime>01/24/2018 14:11:36</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/office.helper.js">
+      <publishTime>12/28/2017 15:08:25</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/settings.js">
+      <publishTime>01/15/2018 15:44:55</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/storageLibrary.helper.js">
+      <publishTime>12/09/2017 22:28:17</publishTime>
+    </File>
+    <File Include="Scripts/CommonJs/xhr.helper.js">
+      <publishTime>01/15/2018 15:44:55</publishTime>
+    </File>
+    <File Include="Scripts/crypto-js.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/download.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/downloadify.min.js">
+      <publishTime>12/22/2017 08:40:23</publishTime>
+    </File>
+    <File Include="Scripts/fabric.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/FabricUI/MessageBanner.js">
+      <publishTime>12/21/2017 17:35:39</publishTime>
+    </File>
+    <File Include="Scripts/FileSaver.min.js">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Scripts/grid-help.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/grid-help.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.intellisense.js">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.fabric.js">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.fabric.min.js">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Scripts/jquery.tablesorter.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/jstree.js">
+      <publishTime>12/29/2017 19:29:10</publishTime>
+    </File>
+    <File Include="Scripts/jstree.min.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/moment.min.js">
+      <publishTime>12/12/2017 16:47:33</publishTime>
+    </File>
+    <File Include="Scripts/office.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/access-web-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:08</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/access-web-16.00.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ar-sa/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ar-sa/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ar-sa/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ar-sa/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ariatelemetry/aria-web-telemetry.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/bg-bg/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/bg-bg/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/bg-bg/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/bg-bg/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/cs-cz/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/cs-cz/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/cs-cz/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/cs-cz/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/da-dk/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/da-dk/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/da-dk/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/da-dk/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/de-de/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/de-de/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/de-de/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/de-de/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/el-gr/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/el-gr/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/el-gr/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/el-gr/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/en-us/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/en-us/office_strings.js">
+      <publishTime>12/20/2017 17:43:09</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/en-us/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/en-us/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es-es/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es-es/office_strings.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es-es/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es-es/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es6-promise.debug.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/es6-promise.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/et-ee/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/et-ee/office_strings.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/et-ee/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/et-ee/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.01.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.02.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.debug.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-15.js">
+      <publishTime>12/19/2017 14:49:28</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-android-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-android-16.00.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-ios-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-ios-16.00.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-mac-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-mac-16.00.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-web-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-web-16.00.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-win32-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:27</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-win32-16.00.js">
+      <publishTime>12/19/2017 14:49:27</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-win32-16.01.debug.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-win32-16.01.js">
+      <publishTime>12/20/2017 17:43:10</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-winrt-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excel-winrt-16.00.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelios-15.debug.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelios-15.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.01.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.02.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.debug.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/excelwebapp-15.js">
+      <publishTime>12/19/2017 14:49:26</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fi-fi/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fi-fi/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fi-fi/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fi-fi/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fr-fr/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fr-fr/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fr-fr/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/fr-fr/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/he-il/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/he-il/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/he-il/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/he-il/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hi-in/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hi-in/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hi-in/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hi-in/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hr-hr/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hr-hr/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hr-hr/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hr-hr/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/html2canvas.debug.js">
+      <publishTime>12/19/2017 14:49:25</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/html2canvas.js">
+      <publishTime>12/19/2017 14:49:25</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hu-hu/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hu-hu/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hu-hu/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/hu-hu/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/id-id/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/id-id/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/id-id/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/id-id/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/it-it/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/it-it/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/it-it/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/it-it/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ja-jp/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ja-jp/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ja-jp/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ja-jp/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/kk-kz/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/kk-kz/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/kk-kz/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/kk-kz/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ko-kr/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ko-kr/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ko-kr/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ko-kr/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lt-lt/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lt-lt/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lt-lt/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lt-lt/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lv-lv/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lv-lv/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lv-lv/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/lv-lv/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ms-my/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ms-my/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ms-my/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ms-my/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nb-no/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nb-no/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nb-no/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nb-no/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nl-nl/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nl-nl/office_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nl-nl/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/nl-nl/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/o15apptofilemappingtable.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/o15apptofilemappingtable.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/office-vsdoc.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/office.debug.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/office.js">
+      <publishTime>12/20/2017 17:43:11</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-ios-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-ios-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-web-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-web-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-win32-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-win32-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-winrt-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/onenote-winrt-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.01.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.02.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.03.debug.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.03.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.04.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.04.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.debug.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-15.js">
+      <publishTime>12/19/2017 14:49:23</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-android-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-android-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-ios-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-ios-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-mac-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-mac-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-web-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-web-16.00.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-web-16.01.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-web-16.01.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.00.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.01.debug.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.01.js">
+      <publishTime>12/19/2017 14:49:22</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.02.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32-16.02.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlook-win32.debug-vsdoc.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlookwebapp-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlookwebapp-15.01.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlookwebapp-15.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/outlookwebapp-15.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pl-pl/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pl-pl/office_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pl-pl/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pl-pl/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.01.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.02.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-15.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-ios-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-ios-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-mac-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-mac-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-web-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-web-16.00.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-win32-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:21</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-win32-16.00.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-win32-16.01.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpoint-win32-16.01.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpointios-15.debug.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/powerpointios-15.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.01.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.02.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.debug.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-15.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-win32-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/project-win32-16.00.js">
+      <publishTime>12/19/2017 14:49:20</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-br/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-br/office_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-br/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-br/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-pt/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-pt/office_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-pt/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/pt-pt/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ro-ro/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ro-ro/office_strings.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ro-ro/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:12</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ro-ro/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ru-ru/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ru-ru/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ru-ru/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/ru-ru/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sk-sk/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sk-sk/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sk-sk/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sk-sk/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sl-si/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sl-si/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sl-si/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sl-si/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sr-latn-cs/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sr-latn-cs/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sr-latn-cs/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sr-latn-cs/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sv-se/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sv-se/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sv-se/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/sv-se/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/th-th/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/th-th/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/th-th/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/th-th/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/tr-tr/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/tr-tr/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/tr-tr/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/tr-tr/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/uk-ua/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/uk-ua/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/uk-ua/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/uk-ua/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/vi-vn/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/vi-vn/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/vi-vn/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/vi-vn/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.01.debug.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.01.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.02.debug.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.02.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.debug.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-15.js">
+      <publishTime>12/19/2017 14:49:19</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-ios-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-ios-16.00.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-mac-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-mac-16.00.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-web-16.00.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-web-16.00.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-win32-16.00.debug.js">
+      <publishTime>12/19/2017 14:49:18</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-win32-16.00.js">
+      <publishTime>12/19/2017 14:49:18</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-win32-16.01.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/word-win32-16.01.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/wordios-15.debug.js">
+      <publishTime>12/19/2017 14:49:18</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/wordios-15.js">
+      <publishTime>12/19/2017 14:49:18</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-cn/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-cn/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-cn/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-cn/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-tw/office_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-tw/office_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-tw/outlook_strings.debug.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/1/zh-tw/outlook_strings.js">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/metadata/endpoints.xml">
+      <publishTime>12/20/2017 17:43:13</publishTime>
+    </File>
+    <File Include="Scripts/Office/metadata/features.xml">
+      <publishTime>12/19/2017 14:49:18</publishTime>
+    </File>
+    <File Include="Scripts/Office/MicrosoftAjax.js">
+      <publishTime>12/13/2017 15:10:06</publishTime>
+    </File>
+    <File Include="Scripts/swfobject.js">
+      <publishTime>12/22/2017 08:40:23</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/04/2018 17:18:47</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>12/06/2017 11:53:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

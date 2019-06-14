@@ -1,0 +1,4 @@
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Debug\netcoreapp1.1\AccentMSAddins.Services.csprojResolveAssemblyReference.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Debug\netcoreapp1.1\AccentMSAddins.Services.csproj.CoreCompileInputs.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Debug\netcoreapp1.1\AccentMSAddins.Services.AssemblyInfoInputs.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Debug\netcoreapp1.1\AccentMSAddins.Services.AssemblyInfo.cs

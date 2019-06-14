@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <script src="../../Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/crypto-js.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/CommonJs/authorize.helper.js" type="text/javascript"></script>
+    <script src="../../Scripts/CommonJs/settings.js" type="text/javascript"></script>
+    <script src="../../Scripts/CommonJs/storageLibrary.helper.js" type="text/javascript"></script>
+    <script src="../../Scripts/CommonJs/common.helper.js" type="text/javascript"></script>
+    <script src="../../Scripts/CommonJs/xhr.helper.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css">
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+    <link rel="stylesheet" href="../../Content/custom.css" />
+
+    <style>
+        .login-wrapper {
+            margin: auto;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px !important;
+            font-size: 13px;
+            height: 100%;
+            background-color: white;
+        }
+
+        .login-title {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .error-msg {
+            color: red;
+        }
+
+        .ms-Label span {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay">
+
+    </div>
+    <div class="ms-Grid login-wrapper">
+        <div class="ms-Grid-row">
+            <p class="login-title">Sign in to Accent Library</p>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6" tabindex="0">
+                <label class="ms-Label">Username <span>*</span></label>
+                <input class="ms-TextField-field" type="text" id="username" placeholder="Username">
+            </div>
+            <div class="ms-Grid-col" ms-u-sm6>
+                <br />
+                <br />
+                <label class="ms-Label error-msg" id="errorUsername"></label>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6" tabindex="1">
+                <label class="ms-Label">Password <span>*</span></label>
+                <input class="ms-TextField-field" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="ms-Grid-col" ms-u-sm6>
+                <br />
+                <br />
+                <label class="ms-Label error-msg" id="errorPassword"></label>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6">
+                <div class="ms-Dropdown" tabindex="2">
+                    <label class="ms-Label">Environment <span>*</span></label>
+                    <i class="ms-Dropdown-caretDown ms-Icon ms-Icon--ChevronDown"></i>
+                    <select class="ms-Dropdown-select" id="environment"></select>
+                </div>
+            </div>
+            <div class="ms-Grid-col" ms-u-sm6>
+                <br />
+                <br />
+                <label class="ms-Label error-msg" id="errorEnvironment"></label>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6" tabindex="3">
+                <label class="ms-Label">Library Name <span>*</span></label>
+                <input class="ms-TextField-field" type="text" id="libraryName" placeholder="Library Name">
+            </div>
+            <div class="ms-Grid-col" ms-u-sm6>
+                <br />
+                <br />
+                <label class="ms-Label error-msg" id="errorLibraryName"></label>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6">
+                <div class="ms-CheckBox">
+                    <input tabindex="4" type="checkbox" class="ms-CheckBox-input" id="sso" disabled>
+                    <label role="checkbox"
+                           class="ms-CheckBox-field is-disabled"
+                           tabindex="0"
+                           aria-checked="false"
+                           aria-disabled="true"
+                           name="checkboxa">
+                        <span class="ms-Label">SSO</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm6">
+                <div class="ms-CheckBox">
+                    <input tabindex="5" type="checkbox" class="ms-CheckBox-input" id="remember">
+                    <label role="checkbox"
+                           class="ms-CheckBox-field"
+                           tabindex="0"
+                           name="checkboxb">
+                        <span class="ms-Label">Remember Password</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-u-sm8">
+                <label class="ms-Label error-msg" id="errorMessage"></label>
+            </div>
+            <div class="ms-Grid-col ms-u-sm4">
+                <button class="ms-Button ms-Button--primary" id="login-signin" tabindex="6">
+                    <span class="ms-Button-label">Sign in</span>
+                </button>
+                <button class="ms-Button" id="login-cancel" tabindex="7">
+                    <span class="ms-Button-label">Cancel</span>
+                </button>
+            </div>
+        </div>
+        <div class="ms-Dialog ms-Dialog--blocking focus" id="loading-indicator">
+            <div class="ms-Dialog-content">
+                <div class="ms-Spinner">
+                    <div class="ms-Spinner-label">
+                        Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var activedAddin = commonHelper.getParameterByName("addin") || "";
+        var allowDomain = "@accent-technologies.com";
+        var dialogComponent;
+        var optionsDefaultData = [
+            {
+                key: "PRODUCTION_N01",
+                value: "N01 Prod",
+                isSelected: false
+            },
+            {
+                key: "PRODUCTION_N02",
+                value: "2K7 Prod",
+                isSelected: false
+            },
+            {
+                key: "PRODUCTION_N04",
+                value: "44 Prod",
+                isSelected: false
+            },
+            {
+                key: "PRODUCTION_N11",
+                value: "N11 Prod",
+                isSelected: false
+            },
+            {
+                key: "PRODUCTION_N14",
+                value: "N14 Prod",
+                isSelected: false
+            },
+            {
+                key: "PRODUCTION_N15",
+                value: "N15 Prod",
+                isSelected: false
+            },
+            {
+                key: "QA_N02",
+                value: "2K7 QA",
+                isSelected: false
+            },
+            {
+                key: "QA_N04",
+                value: "44 QA",
+                isSelected: false
+            },
+            {
+                key: "QA_N11",
+                value: "N11 QA",
+                isSelected: false
+            },
+            {
+                key: "QA_N14",
+                value: "N14 QA",
+                isSelected: false
+            },
+            {
+                key: "QA_N15",
+                value: "N15 QA",
+                isSelected: false
+            }
+        ];
+
+        Office.initialize = function (reason) {
+            var environmentElement = document.querySelector(".ms-Dropdown");
+            new fabric["Dropdown"](environmentElement);
+
+            var checkBoxElements = document.querySelectorAll(".ms-CheckBox");
+            var isRemember = localStorage.getItem("isRemember") || false;
+            for (var i = 0; i < checkBoxElements.length; i++) {
+                if (checkBoxElements[i].innerText.indexOf("Remember Password") > -1) {
+                    var remember = new fabric["CheckBox"](checkBoxElements[i]);
+                    if (isRemember) {
+                        remember.check();
+                    }
+                }
+                else {
+                    new fabric["CheckBox"](checkBoxElements[i]);
+                }
+            }
+
+            var cancelButtonElement = document.querySelector("#login-cancel");
+            new fabric["Button"](cancelButtonElement, function () {
+                Office.context.ui.messageParent("closeDialog");
+            });
+
+            var signinButtonElement = document.querySelector("#login-signin");
+            new fabric["Button"](signinButtonElement, function () {
+                var loginObj = {
+                    username: document.querySelector("#username").value,
+                    password: document.querySelector("#password").value,
+                    libraryName: document.querySelector("#libraryName").value,
+                    environmentName: document.querySelector("#environment").options[document.querySelector("#environment").selectedIndex].innerHTML,
+                    isRemember: remember.getValue()
+                };
+
+                loadingIndicator.show(dialogComponent);
+
+                authorize.login(loginObj, handleLoginCallback);
+            });
+
+            dialogComponent = loadingIndicator.register();
+
+            loadStorageData();
+
+            $(document).ready(function () {
+                checkRequiredField();
+
+                registerEvent();
+            });
+        }
+
+        function loadStorageData() {
+            var environmentValue = localStorage.getItem("environmentName") || "";
+            var options = [];
+            if (localStorage.getItem("username")) {
+                document.querySelector("#username").value = localStorage.getItem("username");
+                document.querySelector("#password").value = localStorage.getItem("password");
+                document.querySelector("#libraryName").value = localStorage.getItem("libraryName");
+                $.extend(options, optionsDefaultData);
+                $.each(options, function (i, v) {
+                    if (v.value === environmentValue) {
+                        v.isSelected = true;
+                    }
+                });
+                updateEnvironment(options);
+            }
+        }
+
+        function handleLoginCallback(result) {
+            if (!result.messageError) {
+                if (activedAddin === "browselibrary") {
+                    result.close = false;
+                }
+                else {
+                    result.close = true;
+                }
+
+                Office.context.ui.messageParent(JSON.stringify(result));
+
+                if (activedAddin === "browselibrary") {
+                    window.location.href = window.location.origin + "/BrowseLibrary/Home.html";
+                }
+            }
+            else {
+                handleMessageError(result.messageError, '#errorMessage');
+                loadingIndicator.hide(dialogComponent);
+            }
+        }
+
+        function handleMessageError(msg, errorId) {
+            $(errorId).text(msg);
+        }
+
+        function checkRequiredField() {
+            if ($("#username").val() == "" || $("#password").val() == "" || $("#libraryName").val() == "" || $("#environment").find(":selected").text() == "") {
+                $("#login-signin").prop("disabled", true);
+            }
+            else {
+                $("#login-signin").prop("disabled", false);
+            }
+        }
+
+        function updateEnvironment(optionsData) {
+            $("div[tabindex='2']").find('.ms-Dropdown-select').empty();
+            $.each(optionsData, function (i, v) {
+                var attrSelected = v.isSelected ? "selected" : "";
+                $('<option value="' + v.key + '"' + attrSelected + '>' + v.value + '</option>').appendTo($("div[tabindex='2']").find('.ms-Dropdown-select'));
+            });
+            $("div[tabindex='2']").find('.ms-Dropdown-items').remove();
+            $("div[tabindex='2']").find('.ms-Dropdown-title').remove();
+
+            var elm = document.querySelector(".ms-Dropdown");
+            var Dropdown = new fabric['Dropdown'](elm);
+        }
+
+        function clearEnvironment() {
+            $("div[tabindex='2']").find('.ms-Dropdown-select').empty();
+            $("div[tabindex='2']").find('.ms-Dropdown-items').remove();
+            $("div[tabindex='2']").find('.ms-Dropdown-title').remove();
+
+            var elm = document.querySelector(".ms-Dropdown");
+            var Dropdown = new fabric['Dropdown'](elm);
+        }
+
+        function registerEvent() {
+            $("#username").keyup(function (e) {
+                if (validateUsername($(this).val())) {
+                    var options = [];
+                    $.extend(options, optionsDefaultData);
+                    options[0].isSelected = true;
+                    updateEnvironment(options);
+                }
+                else {
+                    clearEnvironment();
+                }
+
+                checkRequiredField();
+            });
+
+            $("#password").keyup(function (e) {
+                checkRequiredField();
+            });
+
+            $("#libraryName").keyup(function (e) {
+                checkRequiredField();
+            });
+
+            $("#environment").change(function (e) {
+                checkRequiredField();
+            });
+        }
+
+        function validateUsername(value) {
+            var re = /^[\w.%+-]+@accent\-technologies\.com$/;
+            return re.test(value.toLowerCase());
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins\bin\Debug\Content\xml\search.xml
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins\obj\Debug\AccentMSAddins.csproj.CoreCompileInputs.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins\obj\Debug\AccentMSAddins.csprojResolveAssemblyReference.cache

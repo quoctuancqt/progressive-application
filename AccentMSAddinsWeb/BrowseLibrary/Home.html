@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <script src="../Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="../Scripts/jstree.min.js" type="text/javascript"></script>
+    <script src="../Scripts/crypto-js.min.js" type="text/javascript"></script>
+    <script src="../Scripts/moment.min.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/dialog.helper.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/authorize.helper.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/settings.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/storageLibrary.helper.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/common.helper.js" type="text/javascript"></script>
+    <script src="../Scripts/CommonJs/xhr.helper.js" type="text/javascript"></script>
+    <script src="../Scripts/base64-arraybuffer.js"></script>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css">
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css">
+    <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
+
+    <link rel="stylesheet" href="../Content/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.4/themes/default/style.min.css" />
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <script src="../Scripts/grid-help.min.js" type="text/javascript"></script>
+    <link href="../Content/grid-help.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../Content/custom.css" />
+    <!--<script src="https://192.168.2.47:1337/vorlon.js"></script>-->
+</head>
+
+<body class="ms-bgColor-neutralLight">
+    <div id="overlay">
+
+    </div>
+    <a id="linkOpenFile" href="#" target="_blank"></a>
+    <div id="content-main">
+        <div class="ms-CommandBar">
+            <div class="ms-CommandBar-mainArea">
+                <div class="ms-CommandButton">
+                    <button class="ms-CommandButton-button" id="btn-close">
+                        <span class="ms-CommandButton-label">Close</span>
+                    </button>
+                </div>
+                <div class="ms-CommandButton">
+                    <button class="ms-CommandButton-button" id="btn-refresh">
+                        <span class="ms-CommandButton-label"><i class="ms-Icon ms-Icon--Refresh" aria-hidden="true"></i> Refesh</span>
+                    </button>
+                </div>
+                <div class="ms-CommandButton custom-disabled">
+                    <button class="ms-CommandButton-button" id="btn-open">
+                        <span class="ms-CommandButton-label"><i class="ms-Icon ms-Icon--OpenFolderHorizontal" aria-hidden="true"></i> Open</span>
+                    </button>
+                </div>
+                <div class="ms-CommandButton custom-disabled">
+                    <button class="ms-CommandButton-button" id="btn-download">
+                        <span class="ms-CommandButton-label"><i class="ms-Icon ms-Icon--Download" aria-hidden="true"></i> Download</span>
+                    </button>
+                    <!--<button class="ms-CommandButton-splitIcon custom-disabled">
+                        <i class="ms-Icon ms-Icon--ChevronDown"></i>
+                    </button>
+                    <ul class="ms-ContextualMenu is-opened">
+                        <li class="ms-ContextualMenu-item">
+                            <a class="ms-ContextualMenu-link" id="downloadDefaultLocation">Save to Default Location</a>
+                        </li>
+                        <li class="ms-ContextualMenu-item">
+                            <a class="ms-ContextualMenu-link" id="downloadChooseLocation">Choose Location</a>
+                        </li>
+                    </ul>-->
+                </div>
+                <div class="ms-CommandButton custom-disabled">
+                    <button class="ms-CommandButton-button" id="btn-delete">
+                        <span class="ms-CommandButton-label"><i class="ms-Icon ms-Icon--Delete" aria-hidden="true"></i> Delete</span>
+                    </button>
+                </div>
+                <div class="ms-SearchBox pull-right">
+                    <input class="ms-SearchBox-field" type="text" value="" id="searchKey">
+                    <label class="ms-SearchBox-label">
+                        <i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i>
+                        <span class="ms-SearchBox-text">Search</span>
+                    </label>
+                    <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel">
+                        <button class="ms-CommandButton-button">
+                            <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Clear"></i></span>
+                            <span class="ms-CommandButton-label"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <table class="ms-Table table-content">
+            <tbody>
+                <tr>
+                    <td class="td-1">
+                        <div id="jstree" class="container">
+
+                        </div>
+                    </td>
+                    <td class="td-2">
+                        <div id="grid" style="width: 100%; height: 400px;"></div>
+                    </td>
+                    <td class="td-3">
+                        <p id="noThumbnail">Select a file to review</p>
+                        <img id="thumbnail" src="" hidden width="200" height="200" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="downloadResultContainer" hidden style="margin-top:10px;">
+            Your downloaded file is located <span id="fileLocation" style="color:green;"></span>
+        </div>
+
+        <div class="ms-Dialog ms-Dialog--blocking focus" id="loading-indicator">
+            <div class="ms-Dialog-content">
+                <div class="ms-Spinner">
+                    <div class="ms-Spinner-label">
+                        Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ms-Dialog ms-Dialog--blocking focus" id="confirm-dialog">
+            <div class="ms-Dialog-title">Confirm Delete</div>
+            <div class="ms-Dialog-content">
+                <p id="confirm-content"></p>
+                <p>Are you sure?</p>
+            </div>
+            <div class="ms-Dialog-actions">
+                <button class="ms-Button ms-Dialog-action ms-Button--primary">
+                    <span class="ms-Button-label">Yes</span>
+                </button>
+                <button class="ms-Button ms-Dialog-action">
+                    <span class="ms-Button-label">No</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var SearchBoxElements = document.querySelectorAll(".ms-SearchBox");
+        for (var i = 0; i < SearchBoxElements.length; i++) {
+            new fabric['SearchBox'](SearchBoxElements[i]);
+        }
+
+        var CommandBarElements = document.querySelectorAll(".ms-CommandBar");
+        for (var i = 0; i < CommandBarElements.length; i++) {
+            new fabric['CommandBar'](CommandBarElements[i]);
+        }
+
+        var CommandButtonElements = document.querySelectorAll(".ms-CommandButton");
+        for (var i = 0; i < CommandButtonElements.length; i++) {
+            new fabric['CommandButton'](CommandButtonElements[i]);
+        }
+
+        var actionButtonElements = document.querySelectorAll(".ms-Dialog-action");
+        var confirmDialog = document.querySelector("#confirm-dialog");
+        var confirmDialogComponent = new fabric['Dialog'](confirmDialog);
+        var actionButtonComponents = [];
+        for (var i = 0; i < actionButtonElements.length; i++) {
+            actionButtonComponents[i] = new fabric['Button'](actionButtonElements[i], actionHandler);
+        }
+
+        function actionHandler(event) {
+            if (this.innerText.trim() == "Yes") {
+                onDelete(selectedFile);
+            }
+            else {
+                $("#confirm-dialog").hide();
+                $("#overlay").removeClass("dark-class");
+            }
+        }
+    </script>
+</body>
+</html>

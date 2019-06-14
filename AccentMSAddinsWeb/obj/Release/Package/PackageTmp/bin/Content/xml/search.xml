@@ -1,0 +1,44 @@
+﻿<search xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" source="1">
+  <filters conjunction="OR">
+    <filter conjunction="OR">
+      <fileTerms conjunction="OR" searchFields="-1">
+        <fileTerm operator="Contains" searchFields="-1">{searchKey}</fileTerm>
+      </fileTerms>
+      <groupTerms conjunction="AND" searchFields="0" />
+      <textTerms conjunction="AND" textTypes="0" />
+      <fileKeywords conjunction="OR">
+        <fileKeyword operator="Contains">{searchKey}</fileKeyword>
+      </fileKeywords>
+      <slideKeywords conjunction="AND" />
+      <groupKeywords conjunction="AND" />
+      <fileAttributes conjunction="AND" />
+      <fileCategorizedAttributes conjunction="AND" />
+      <slideAttributes conjunction="AND" />
+      <slideCategorizedAttributes conjunction="AND" />
+      <groupAttributes conjunction="AND" />
+      <groupCategorizedAttributes conjunction="AND" />
+      <requestTerms conjunction="AND" />
+      <fileTypes conjunction="OR">
+        <fileType extension="ppt" />
+        <fileType extension="pptx" />
+      </fileTypes>
+      <categories>
+        <category catId="{catId}" catType="0" />
+      </categories>
+      <dateModified />
+      <dateImported />
+      <eventGroupTerms conjunction="AND" searchFields="0" />
+      <eventGroupKeywords conjunction="AND" />
+      <eventGroupAttributes conjunction="AND" />
+      <articleTypes />
+      <articleTerms conjunction="AND" searchFields="0" />
+    </filter>
+  </filters>
+  <results maxRows="24000" totalRows="-1">
+    <includeTotalRows>false</includeTotalRows>
+    <fieldConjunction>AND</fieldConjunction>
+    <orderByColumns>
+      <orderByColumn name="fRank" order="Desc" />
+    </orderByColumns>
+  </results>
+</search>

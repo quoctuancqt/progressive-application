@@ -1,0 +1,25 @@
+﻿.notificaton-panel {
+    position: absolute;
+    bottom: 0;
+    background-color: #bdc3c7;
+    width: 100%;
+}
+
+.notification-footer {
+    float: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.notification-header, .notification-body {
+    margin: 5px;
+}
+
+    .notification-header #notification-header-title {
+        color: #c0392b;
+        font-weight: bold;
+    }
+
+    .notification-body #notification-body-content {
+        color: #66605f;
+    }

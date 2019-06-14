@@ -1,0 +1,7 @@
+False
+2bec37fe-6176-4d98-97c0-277d913f6b58be6a2e47-7fdb-4966-a6fe-cfd0b3e2b6db
+{cd5b69e9-8903-40df-8ce5-73c167a32272}{90733a47-8579-4878-9e36-8ce2387b20ca}
+{9aefc234-01fe-4727-a71a-68fc53a81ecf}
+1.0.0.0
+AccentMSAddins
+_layouts/15/

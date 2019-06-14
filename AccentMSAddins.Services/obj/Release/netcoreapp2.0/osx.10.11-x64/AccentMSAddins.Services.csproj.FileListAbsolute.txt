@@ -1,0 +1,16 @@
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\libhostpolicy.dylib
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\libhostfxr.dylib
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.Services
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.deps.json
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.runtimeconfig.json
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.runtimeconfig.dev.json
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.dll
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.pdb
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.csproj.CoreCompileInputs.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.AssemblyInfoInputs.cache
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.AssemblyInfo.cs
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.dll
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\AccentMSAddins.Services.pdb
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\bin\Release\netcoreapp2.0\osx.10.11-x64\accent-addins-cert.pfx
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\UserSecretsAssemblyInfo.cs
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins.Services\obj\Release\netcoreapp2.0\osx.10.11-x64\NuGet\E66D9E84410513A2CBC0CE47712A0374EFD4CE77\MimeTypes\1.0.6\MimeTypes.cs

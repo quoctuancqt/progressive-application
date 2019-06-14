@@ -1,0 +1,286 @@
+﻿
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.body, .ms-Grid, ms-Grid-col, .ms-Grid-row {
+    padding: 0px !important;
+    margin: 0 auto !important;
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid #808080;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    overflow: auto
+}
+
+.boder-1px {
+    border: 1px solid #808080;
+    min-height: 350px;
+}
+
+.boder-side-1px {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.td-1 {
+    background-color: white;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    vertical-align: top;
+    border-left: 1px solid #808080;
+}
+
+.td-2 {
+    background-color: white;
+    border-left: 1px solid #808080;
+    width: 40%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.td-3 {
+    background-color: white;
+    border-left: 1px solid #808080;
+}
+
+.table-content {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #808080;
+}
+
+.bg-title {
+    background-color: #d6cbc7;
+}
+
+.clear-both {
+    clear: both;
+    height: 0;
+}
+
+.ms-Breadcrumb-itemLink:hover {
+    background-color: paleturquoise !important;
+    color: #808080 !important;
+}
+
+.ms-Breadcrumb-itemLink {
+    font-size: 16px !important;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.header-browsing {
+    margin: 0 auto;
+    padding: 0px;
+    width: 100%;
+    height: 38px;
+    background-color: paleturquoise;
+    border: 1px solid #808080;
+}
+
+
+.align-middle {
+    color: #333333;
+}
+
+
+.file-list, .file-list ul {
+    list-style-type: none;
+    font-size: 1em;
+    line-height: 1.8em;
+    margin-left: 10px;
+    padding-left: 18px;
+    border-left: 1px dotted #aaa;
+}
+
+    .file-list li {
+        position: relative;
+        padding-left: 15px;
+    }
+
+        .file-list li a {
+            text-decoration: none;
+            color: #444;
+        }
+
+            .file-list li a:before {
+                display: block;
+                content: " ";
+                width: 10px;
+                height: 1px;
+                position: absolute;
+                border-bottom: 1px dotted #aaa;
+                top: .6em;
+                left: -9px;
+            }
+
+        .file-list li:before {
+            list-style-type: none;
+            font-family: FontAwesome;
+            display: block;
+            content: '\f0f6';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+
+    .file-list .folder-root {
+        list-style-type: none;
+    }
+
+        .file-list .folder-root a {
+            text-decoration: none;
+        }
+
+        .file-list .folder-root:before {
+            color: #FFD04E;
+            content: "\f07b";
+        }
+
+        .file-list .folder-root.open:before {
+            content: "\f07c";
+        }
+
+li.folder-root ul {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+li.folder-root.closed > ul {
+    opacity: 0;
+    max-height: 0px;
+}
+
+li.folder-root.open > ul {
+    opacity: 1;
+    display: block;
+    max-height: 1000px;
+}
+
+
+.jquery-script-clear {
+    clear: both;
+    height: 0;
+}
+/*sort*/
+#keywords {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+    #keywords thead {
+        cursor: pointer;
+        background: #c9dff0;
+    }
+
+        #keywords thead tr th {
+            font-weight: bold;
+            border-right: 1px solid white;
+            padding: 5px;
+        }
+
+            #keywords thead tr th span {
+                padding-right: 20px;
+                background-repeat: no-repeat;
+                background-position: 100% 100%;
+            }
+
+            #keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+                background: #acc8dd;
+            }
+
+                #keywords thead tr th.headerSortUp span {
+                    background-image: url('Images/up-arrow.png');
+                }
+
+                #keywords thead tr th.headerSortDown span {
+                    background-image: url('Images/down-arrow.png');
+                }
+
+    #keywords tbody tr {
+        color: #555;
+    }
+
+        #keywords tbody tr td {
+            text-align: center;
+            padding: 5px;
+        }
+
+            #keywords tbody tr td.lalign {
+                text-align: left;
+            }
+
+#jstree {
+    border: none;
+    border-bottom: 1px solid #808080;
+}
+
+#grid {
+    border: none;
+    padding: 0;
+}
+
+.custom-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.thumbnail-controls {
+    margin: 5px;
+    border: none;
+}
+
+.thumbnail-control {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.ms-CommandButton-icon {
+    font-size: 14px !important;
+}
+
+.ms-SearchBox {
+    height: auto !important;
+}
+
+.ms-SearchBox-label {
+    line-height: 30px;
+}
+
+.ms-CommandBar .ms-SearchBox {
+    margin-right: 0px;
+}

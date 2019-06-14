@@ -1,0 +1,2 @@
+bin\Debug\OfficeAppManifests\AccentMSAddinsManifest.xml
+D:\Projects\AccentMSAddins\AccentMSAddins\AccentMSAddins\bin\Debug\AccentMSAddins.debugapp
